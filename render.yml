@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ecommerce-backend
+    env: java
+    plan: free
+    branch: ramahernan
+    buildCommand: "./mvnw clean package"
+    startCommand: "java -jar target/ecommerce-0.0.1-SNAPSHOT.jar"## YAML Template.
+---
